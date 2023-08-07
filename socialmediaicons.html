@@ -244,15 +244,26 @@
 
 <body>
 
-  <button id="TikTok" class="btn large black rounded threeD" type="button" onclick="navigate(this.id)"> <i class="fa-regular fa-star"></i> TikTok</button>
-  <button id="YouTube" class="btn large red rounded threeD" type="button" onclick="navigate(this.id)"> <i class="fa-regular fa-star"></i> YouTube</button>
-  
+  <button id="TikTok" class="btn large black rounded threeD" type="button" onclick="navigate(this.id)"> <i class="fa-brands fa-tiktok" style="color: #ffffff;"></i> TikTok</button>
+  <button id="YouTube" class="btn large red rounded threeD" type="button" onclick="navigate(this.id)"> <i class="fa-brands fa-youtube" style="color: #f2f2f2;"></i> YouTube</button>
+  <button id="Etsy" class="btn large orange rounded threeD" type="button" onclick="navigate(this.id)"> <i class="fa-brands fa-etsy"></i> Etsy</button>
+  <button id="Instagram" class="btn large pink rounded threeD" type="button" onclick="navigate(this.id)"> <i class="fa-brands fa-instagram" style="color: #eeeff2;"></i> Instagram</button>
+  <button id="Twitter" class="btn large blue rounded threeD" type="button" onclick="navigate(this.id)"> <i class="fa-brands fa-twitter" style="color: #fafafa;"></i> Twitter</button>
   <script>
     function navigate(id) {
       if (id === "TikTok")
         window.open("https://www.tiktok.com/@truppys", '_blank').focus();
       else if (id === "YouTube"){
         window.open("https://www.youtube.com/channel/UCiOzdEXqj_bXcoPqoHFDi5w", '_blank').focus();
+      }
+      else if (id === "Etsy"){
+        window.open("https://www.etsy.com/shop/Truppys", '_blank').focus();
+      }
+      else if (id === "Instagram"){
+        window.open("https://www.instagram.com/truppys/", '_blank').focus();
+      }
+      else if (id === "Twitter"){
+        window.open("https://twitter.com/truppys", '_blank').focus();
       }
     }
   </script>
