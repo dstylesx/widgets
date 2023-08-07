@@ -243,19 +243,26 @@
 </head>
 
 <body>
-  
-  <button class="btn large black rounded threeD" type="button" onclick="navigate()"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i> TikTok</button>
+  <div class="wrapper">
+
+    <div id="TikTok" onclick="navigate(this.id)" class="fill  TikTok">
+      <button class="btn large black rounded threeD" type="button" onclick="navigate()"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i> TikTok</button>
+    <div>
 
 
-  
-  <button class="btn large red rounded threeD" type="button" onclick="navigate()"><i class="fa-brands fa-youtube" style="color: #f2f2f2;"></i> YouTube</button>
+    <div id="YouTube" onclick="navigate(this.id)" class="fill  YouTube">
+      <button class="btn large red rounded threeD" type="button" onclick="navigate()"><i class="fa-brands fa-youtube" style="color: #f2f2f2;"></i> YouTube</button>
+    <div>
+      
+  </div>
   
   <script>
-    function navigate() {
-      
-      window.open("https://www.tiktok.com/@truppys", '_blank').focus();
+    function navigate(id) {
+
+      if (id === "TikTok")
+        window.open("https://www.tiktok.com/@truppys", '_blank').focus();
         
-      {
+      else if (id === "YouTube") {
         window.open("https://www.youtube.com/channel/UCiOzdEXqj_bXcoPqoHFDi5w", '_blank').focus();
       }
     }
