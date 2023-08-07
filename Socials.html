@@ -244,11 +244,16 @@
 
 <body>
 
-  <button class="btn large black rounded threeD" type="button" onclick="navigate()"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i> TikTok</button>
+  <button class="btn large black rounded threeD" type="button" onclick="navigate(1)"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i> TikTok</button>
+
+  <button class="btn large red rounded threeD" type="button" onclick="navigate(2)"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i> YouTube</button>
   
   <script>
-    function navigate() {
+    function navigate(1) {
       window.open("https://www.tiktok.com/@truppys", '_blank').focus();
+    }
+    function navigate(2) {
+      window.open("https://www.instagram.com/truppys/", '_blank').focus();
     }
   </script>
 
